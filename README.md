@@ -48,7 +48,8 @@ By following these steps, you can effectively assess the performance of your gRP
 
 ### Apache JMeter
 
-![JMeter Java Sampler](assets/images/JMeterJavaSampler.jpg)        ![JMeter Results Tree](assets/images/JMeterResultsTree.jpg)
+![JMeter Java Sampler](assets/images/JMeterJavaSampler.jpg)        
+![JMeter Results Tree](assets/images/JMeterResultsTree.jpg)
 
 ### Special Note
 
