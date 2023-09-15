@@ -23,7 +23,7 @@ This Project is the benchmarking these services, the approach we used using Apac
 
 Key Steps for Load Testing a gRPC Application using Apache JMeter:
 
-Step 1: Writing a gRPC Client in Java [pom.xml](custom-jmeter-sampler/POM.xml)
+Step 1: Writing a gRPC Client in Java [pom.xml](POM.xml)
 Begin by creating a Maven project and placing the .proto file in a source package. To generate data access classes, include the protobuf compiler plugin in the project's pom.xml. These generated classes enable the creation of a Java-based gRPC client, which communicates with the gRPC server.
 
 Step 2: Writing a Custom JMeter Sampler in Java
