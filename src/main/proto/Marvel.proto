@@ -1,0 +1,81 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "org.example.marvel.universe.protbuf";
+option java_outer_classname = "MarvelProtoService";
+option objc_class_prefix = "MAR";
+
+// For more protobuf info - https://protobuf.dev/programming-guides/proto3/
+package protobuf;
+
+service CharacterPublisher {
+
+  // Calling all heroes! It's time to send Marvel character data! ⚡
+  rpc PublishCharacterInfo (CharacterInfo) returns (ResponseCode) {
+  }
+
+}
+
+message CharacterInfo {
+
+  // Superhero's secret identity (alias) 🦸
+  string alias = 1;
+  // Superhero's real name (if they have one) 👤
+  string realName = 2;
+  // Superhero's hometown (protecting the city!) 🌆
+  string hometown = 3;
+  // Superpower level (on a scale of 1 to 10) 💥
+  int32 superpowerLevel = 4;
+  // Special abilities (flying, super strength, invisibility, etc.) ✨
+  repeated string specialAbilities = 5;
+  // Nemesis - arch-enemy (the one we're always fighting) 😈
+  string nemesis = 6;
+  // Superhero team (Avengers, X-Men, etc.) 🦸‍♂️🦸‍♀️
+  string superheroTeam = 7;
+  // Catchphrase (the iconic line we always say) 💬
+  string catchphrase = 8;
+
+  oneof universe {
+    // Marvel Universe character details 🌟
+    MarvelCharacter marvelCharacter = 9;
+    // DC Universe character details (if they somehow sneak in!) 🦇
+    DcCharacter dcCharacter = 10;
+  }
+
+  // Unique character ID (top-secret code!) 🕵️‍♂️
+  string characterId = 11;
+  // Additional context or backstory (every hero has one!) 📖
+  map<string, string> backstory = 12;
+
+  enum MarvelCharacter {
+    // Iron Man - Genius billionaire playboy philanthropist! 💰
+    IRON_MAN = 0;
+    // Captain America - Defender of justice and freedom! 🇺🇸
+    CAPTAIN_AMERICA = 1;
+    // Spider-Man - Friendly neighborhood superhero! 🕷️
+    SPIDER_MAN = 2;
+    // Thor - The mighty god of thunder! ⚡
+    THOR = 3;
+    // Hulk - Smash! 💥
+    HULK = 4;
+  }
+
+  enum DcCharacter {
+    // BAT MAN - billionaire wise futuristic! 💰
+    BAT_MAN = 0;
+    // Super Man - Defender of Human Species from his world!
+    SUPER_MAN = 1;
+    // AQUA MAN - Friendly neighborhood Ocean Man!
+    AQUA_MAN = 2;
+    // FLASH - The mighty god of Speed! ⚡
+    FLASH = 3;
+  }
+
+}
+message ResponseCode {
+  // Success - Marvel data sent successfully! 🎉
+  string SUCCESS = 1;
+  // Error - Oops, something went wrong in the multiverse! 🌌
+  string ERROR = 2;
+}
+
