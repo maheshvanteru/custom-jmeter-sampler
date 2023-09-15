@@ -33,7 +33,7 @@ Create a custom JMeter sampler, such as [MarvelCharacterGrpcSampler.java](src/ma
 
 ### Step 3: Exporting the Project Jar to JMeter
 
-Export the project as a runnable JAR file and place it in JMeter's external libraries folder. This ensures that JMeter can utilize the custom sampler for load testing.
+Export the project as a runnable `JAR` file built from `MAVEN` and place it in JMeter's external libraries folder. This ensures that JMeter can utilize the custom sampler for load testing.
 
 ### Step 4: Using the Custom Java Request Sampler in JMeter
 
@@ -46,3 +46,10 @@ Once the JMeter test plan is set up, initiate the load test using the JMeter com
 By following these steps, you can effectively assess the performance of your gRPC-powered microservices, gaining insights into their efficiency and scalability.
 
 
+### Apache JMeter
+
+![JMeter Java Sampler](assets/images/JMeterJavaSampler.jpg)        ![JMeter Results Tree](assets/images/JMeterResultsTree.jpg)
+
+### Special Note
+
+I assume that a server-side implementation already done according to the .proto demand, This sample project is made for learning purposes only!! Thank you. 
