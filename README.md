@@ -41,7 +41,7 @@ With the custom sampler ready, configure a JMeter test plan, specifying test par
 
 ## Running the Load Test
 
-Once the JMeter test plan is set up, initiate the load test using the JMeter command-line interface (CLI). This begins the load test and generates result files for further analysis.
+Once the JMeter test plan is set up, initiate the load test using the JMeter command-line interface (CLI). This begins the load test and generates result files for further analysis. It is recommended to use the CLI for load testing, below screenshot is the UI of JMeter to showcase a successful run. 
 
 command line: `jmeter.sh -n -t ./MarvelTestPlan.jmx -l ./resultsTree.jtl`
 
