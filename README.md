@@ -1,6 +1,6 @@
 # custom-jmeter-sampler
 
-## Benchmarking gRPC Microservices with Apache JMeter - Custom Jmeter sampler
+## Benchmarking gRPC Microservices with Apache JMeter
 
 ## Description:
 
