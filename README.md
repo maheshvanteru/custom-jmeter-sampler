@@ -15,11 +15,11 @@ This Project is the benchmarking these services, the approach we used using Apac
 
 ## About Protocol Buffers:
 
-Protocol Buffers (protobuf) is an open-source mechanism developed by Google for serializing structured data used in communication protocols. It serves as the foundation for gRPC communication. In a typical gRPC setup, communication rules between clients and servers are defined in a .proto file. 
+`Protocol Buffers (protobuf)` is an open-source mechanism developed by Google for serializing structured data used in communication protocols. It serves as the foundation for gRPC communication. In a typical gRPC setup, communication rules between clients and servers are defined in a .proto file. 
 
 ## Benchmarking gRPC with Apache JMeter:
 
-Apache JMeter is an open-source tool designed for load testing and performance measurement of various services. While JMeter comes with plugins and samplers for testing web services, it lacks direct support for gRPC applications. However, JMeter offers the flexibility to create custom samplers, enabling us to perform load testing on gRPC-based microservices.
+`Apache JMeter` is an open-source tool designed for load testing and performance measurement of various services. While JMeter comes with plugins and samplers for testing web services, it lacks direct support for gRPC applications. However, JMeter offers the flexibility to create custom samplers, enabling us to perform load testing on gRPC-based microservices.
 
 Key Steps for Load Testing a gRPC Application using Apache JMeter:
 
